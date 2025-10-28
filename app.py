@@ -15,9 +15,27 @@ for movie in data:
 for movie in data:
     if movie["year"] == user_input:
         print(movie["title"])   """
+#exact search
 """ user_input = input("What movie do you want to watch?")
 for movie in data:
    if user_input == movie["title"]:
       print(movie["title"]) """
-user_input = input("What genre would you like to watch?")
+#results with search
+""" x = input("What movie?")
+y = x.lower()
+for i in data: 
+    if y in i["title"].lower():
+        print (i["title"]) """
+x = input("what genre?")
+for movie in data:
+    if x in movie["genres"]:
+        print(movie["title"])
 
+
+
+
+
+""" user_input = input("What genre would you like to watch?")
+for movie in data:
+    if user_input == movie["genres"]:
+        print(movie["title"]) """
