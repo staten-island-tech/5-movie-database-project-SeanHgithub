@@ -4,6 +4,7 @@ movies = open("./movies.json", encoding="utf8")
 ## create variable "data" that represents the enitre movie list
 data = json.load(movies)
 
+
 """ for i in data:
     print(i["title"]) """
 """ user_input = int(input("What is the oldest year that you would watch a movie from?"))
@@ -30,8 +31,6 @@ x = input("what genre?")
 for movie in data:
     if x in movie["genres"]:
         print(movie["title"])
-
-
 
 
 
